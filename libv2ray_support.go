@@ -10,11 +10,11 @@ import (
 	"sync"
 	"time"
 
+	v2net "github.com/Github-Aiko/Aiko-Core/common/net"
+	"github.com/Github-Aiko/Aiko-Core/features/dns"
+	"github.com/Github-Aiko/Aiko-Core/features/outbound"
+	v2internet "github.com/Github-Aiko/Aiko-Core/transport/internet"
 	"golang.org/x/sys/unix"
-	v2net "github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/features/dns"
-	"github.com/xtls/xray-core/features/outbound"
-	v2internet "github.com/xtls/xray-core/transport/internet"
 )
 
 type protectSet interface {
